@@ -1,7 +1,7 @@
-![Super-Music](https://telegra.ph/file/ba5e50feaff3c2bbde984.jpg)
-# 𝗠𝗨𝗦𝗜𝗖 𝗦𝗣𝗜𝗗𝗘𝗥
+![Super-Music](https://graph.org/file/6e5004198c3bdbba84bdc.jpg)
+# القرآن الكريم
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+MUSIC-SPIDER+AN+ADVANCE+BOT)](https://github.com/FM8Y/Super-Music)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+SOURCE-SPIDER+AN+ADVANCE+BOT)](https://github.com/FM8Y/Super-Music)
 
 <p align="center">
     ─「 sᴜᴩᴩᴏʀᴛ 」─
