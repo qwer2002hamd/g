@@ -1,5 +1,5 @@
 ![Super-Music](https://graph.org/file/6e5004198c3bdbba84bdc.jpg)
-# القرآن الكريم
+تنصيب بوتات القرآن الكريم
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+SOURCE-SPIDER+AN+ADVANCE+BOT)](https://github.com/FM8Y/Super-Music)
 
