@@ -1,7 +1,7 @@
 {
-    "name": "⦓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗣𝗜𝗗𝗘𝗥 ⦔",
-    "description": "تنصيب بوتات القرآن الكريم للتشغيل في المكالمات الصوتية",
-    "logo": "https://graph.org/file/dad0c165c6157a5ef9c82.jpg",
+    "name": "˹ʜᴀᴍᴅ ✘ ᴍᴜsɪᴄ˼ 🫧🕊️⃝",
+    "description": "صل على النبي وتبسم🥺❤✨",
+    "logo": "https://telegra.ph/file/a0b4ae6f5304825e45f8e.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -13,12 +13,12 @@
     "env": {
       "API_ID": {
         "description": " ضـع ايبي ايدي احصل علية من هنا https://my.telegram.org",
-        "value": "",
+        "value": "27015406",
         "required": true
       },
       "API_HASH": {
         "description": " ضـع ايبي هاش احصل علية من هنا https://my.telegram.org",
-        "value": "",
+        "value": "4346a15e8eed59a4906886b8f40d2d71",
         "required": true
       },
       "BOT_TOKEN": {
@@ -28,7 +28,7 @@
       },
       "OWNER_ID": {
         "description": "ضـع ايـديـك هـنـا",
-        "value": "",
+        "value": "1748768168",
         "required": true
       },
       "SESSION": {
@@ -41,9 +41,9 @@
         "value": "",
         "required": true
       },
-      "SUPPORT_CHAT": {
-        "description": "ضـع رابـط جـروب الـدعـم",
-        "value": "https://t.me/EE_47",
+      "SUPPORT_CHANNEL": {
+        "description": " ضـع رابـط قناة البوت",
+        "value": "https://t.me/ah07v",
         "required": false
       }
     },
