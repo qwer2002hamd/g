@@ -33,10 +33,10 @@ close_key = InlineKeyboardMarkup(
 buttons = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="▷", callback_data="resume_cb"),
-            InlineKeyboardButton(text="ll", callback_data="pause_cb"),
-            InlineKeyboardButton(text="‣‣I", callback_data="skip_cb"),
-            InlineKeyboardButton(text="▢", callback_data="end_cb"),
+            InlineKeyboardButton(text="كمل", callback_data="resume_cb"),
+            InlineKeyboardButton(text="وقف", callback_data="pause_cb"),
+            InlineKeyboardButton(text="تخطي", callback_data="skip_cb"),
+            InlineKeyboardButton(text="ايقاف", callback_data="end_cb"),
             ],
             [
             InlineKeyboardButton("‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"),
