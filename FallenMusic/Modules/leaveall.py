@@ -40,7 +40,7 @@ async def ass_leaveall(_, message: Message):
         chats.append(int(dialog.chat.id))
     schat = (await app.get_chat(SUNAME)).id
     for i in chats:
-        if i in (-1001690426912, int(schat)):
+        if i in (-1001420714100, int(schat)):
             continue
         try:
             await app2.leave_chat(int(i))
@@ -55,9 +55,9 @@ async def ass_leaveall(_, message: Message):
             failed += 1
     try:
         await lear.edit_text(
-            f"<u>**⎊ {ASS_MENTION} تم المغادره:**</u>\n\n**⎊ خرج من :** `{left}`\n**⎊ فشـل :** `{failed}`"
+            f"<u>**💫 {ASS_MENTION} تم المغادره:**</u>\n\n**✨ خرج من :** `{left}`\n**🫧 فشـل :** `{failed}`"
         )
     except:
         await message.reply_text(
-            f"<u>**⎊ {ASS_MENTION} تم المغادره :**</u>\n\n**⎊ خرج من :** `{left}`\n**⎊ فشـل :** `{failed}`"
+            f"<u>**💫 {ASS_MENTION} تم المغادره :**</u>\n\n**✨ خرج من :** `{left}`\n**🫧 فشـل :** `{failed}`"
         )
