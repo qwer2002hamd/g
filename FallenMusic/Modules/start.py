@@ -38,7 +38,7 @@ async def fallen_st(_, message: Message):
         if len(message.text.split()) > 1:
             cmd = message.text.split(None, 1)[1]
             if cmd[0:3] == "inf":
-                m = await message.reply_text("⚡")
+                m = await message.reply_text("🔎")
                 query = (str(cmd)).replace("info_", "", 1)
                 query = f"https://www.youtube.com/watch?v={query}"
                 results = VideosSearch(query, limit=1)
@@ -52,25 +52,26 @@ async def fallen_st(_, message: Message):
                     link = result["link"]
                     published = result["publishedTime"]
                 searched_text = f"""
-‌‌‏≪⊶⌯━‌‌‏𖧊 ⦓ ᥉ρᎥժᥱᖇ ⦔ 𖧊━‌‌‏⌯⊷≫
-⎊ **تتبع المعلومات ** 
+‌‌‏
+💡 **تتبع المعلومات ** 
 
-⎊ **العنوان :** {title}
+🧸 **العنوان :** {title}
 
-⎊ **المدة :** {duration} دقيقة
-⎊ **الآراء :** `{views}`
-⎊ **نشرت في :** {published}
-⎊ **الرابط :** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
-⎊ **القناة :** [{channel}]({channellink})
+⌛ **المدة :** {duration} دقيقة
+🌐 **الآراء :** `{views}`
+🎥 **نشرت في :** {published}
+💎 **الرابط :** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
+📍 **القناة :** [{channel}]({channellink})
 
-⎊ بحث بواسطة {BOT_NAME}
-‌‌‏≪⊶⌯━‌‌‏𖧊 ⦓ ᥉ρᎥժᥱᖇ ⦔ 𖧊━‌‌‏⌯⊷≫"""
+💫 بحث بواسطة {BOT_NAME}
+‌‌‏
+"""
                 key = InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="يوتيوب", url=link),
+                            InlineKeyboardButton(text="‹ يـوتيوب ›", url=link),
                             InlineKeyboardButton(
-                                text="جࢪوب الدعم", url=config.SUPPORT_CHAT
+                                text="‹ قـناة السورس ›", url=config.SUPPORT_CHAT
                             ),
                         ],
                     ]
