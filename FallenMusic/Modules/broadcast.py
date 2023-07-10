@@ -39,7 +39,7 @@ async def broadcast(_, message: Message):
     else:
         if len(message.command) < 2:
             return await message.reply_text(
-                "**مثال:**\n\nاكتب اذاعه + الرساله او اعمل ريب واكتب اذاعه"
+                "**مثال:**\n\nاكتب اذاعه + الرساله او اعمل رد واكتب اذاعه"
             )
         query = message.text.split(None, 1)[1]
     sent = 0
@@ -60,6 +60,6 @@ async def broadcast(_, message: Message):
         except Exception:
             continue
     try:
-        await brep.edit_text(f"**تمت الاذاعه في {sent} شات**")
+        await brep.edit_text(f"**تمت الاذاعه في {sent} مجموعة**")
     except:
-        await message.reply_text(f"**تم الاذاعه في{sent} شات**")
+        await message.reply_text(f"**تم الاذاعه في{sent} مجموعة**")
