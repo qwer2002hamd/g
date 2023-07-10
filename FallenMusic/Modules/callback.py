@@ -234,9 +234,7 @@ async def open_hmenu(_, query: CallbackQuery):
     elif cb == "owner":
         await query.edit_message_text(HELP_DEV, reply_markup=keyboard)
     elif cb == "hmd":
-        await query.edit_message_text(HELP_DEV, reply_markup=keyboard)
-    elif cb == "owner":
-        await query.edit_message_text(HELP_DEV, reply_markup=keyboard)
+        await query.edit_message_text(HELP_HMD, reply_markup=keyboard) 
 
 
 
