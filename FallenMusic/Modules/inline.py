@@ -39,7 +39,7 @@ async def inline_query_handler(_, query):
             await app.answer_inline_query(
                 query.id,
                 results=answers,
-                switch_pm_text="اكتب آي حاجة هبحث عنها في اليوتيوب ⚡",
+                switch_pm_text="🔎 اكتب ما تريد للبحث في اليوتيوب",
                 cache_time=10,
             )
         except:
@@ -61,23 +61,23 @@ async def inline_query_handler(_, query):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʏᴏᴜᴛᴜʙᴇ •",
+                            text="‹ يـوتيوب ›",
                             url=link,
                         )
                     ],
                 ]
             )
             searched_text = f"""
-‌‌‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫
-⎊ **العنوان :** [{title}]({link})
+‌‌‌‌‏
+🧸 **العنوان :** [{title}]({link})
 
-⎊ **المدة :** `{duration}`دقيقه
-⎊ **المشاهدات :** `{views}`
-⎊ **نشـرت في:** {published}
-⎊ **القناة :** [{channel}]({channellink})
+⌛ **المدة :** `{duration}`دقيقه
+🎥 **المشاهدات :** `{views}`
+💡 **نشـرت في:** {published}
+✨ **القناة :** [{channel}]({channellink})
 
-<u>⎊ **بوآسـطه  {BOT_NAME}**</u>
-‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫"""
+<u>⚕️ **بوآسـطه  {BOT_NAME}**</u>
+‌‌‏"""
             answers.append(
                 InlineQueryResultPhoto(
                     photo_url=thumbnail,
