@@ -54,7 +54,7 @@ pm_buttons = [
     ],
     [InlineKeyboardButton(text="‹ اوامر الـتشغيل ›", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text="‹ طريقه التفعيل ›", url=config.fallen_cb hmd),
+        InlineKeyboardButton(text="‹ طريقه التفعيل ›", callback_data="fallen_cb hmd"),
     ],
     [
         InlineKeyboardButton(text="‹ المطور ›", user_id=config.OWNER_ID),
@@ -73,7 +73,7 @@ gp_buttons = [
     ],
     [InlineKeyboardButton(text="‹ اوامر الـتشغيل ›", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text="‹ طريقه التفعيل ›", url=config.fallen_cb hmd),
+        InlineKeyboardButton(text="‹ طريقه التفعيل ›", callback_data="fallen_cb hmd"),
     ],
     [
         InlineKeyboardButton(text="‹ المطور ›", user_id=config.OWNER_ID),
@@ -87,24 +87,24 @@ gp_buttons = [
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="• اوامࢪ التشغيل •",
+            text="‹ اوامر القنوات ›",
             callback_data="fallen_cb help",
         )
     ],
     [
-        InlineKeyboardButton(text="‹ اوامر القنوات ›", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="‹ اوامر المجموعات ›", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="‹ اوامر المجموعه ›", callback_data="fallen_cb sudo"),
+        InlineKeyboardButton(text="‹ اوامر بالانگليزي ›", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="• ࢪجوع •", callback_data="fallen_home"),
-        InlineKeyboardButton(text="• مسح •", callback_data="close"),
+        InlineKeyboardButton(text="‹ رجوع ›", callback_data="fallen_home"),
+        InlineKeyboardButton(text="‹ حذف ›", callback_data="close"),
     ],
 ]
 
 
 help_back = [
     [
-        InlineKeyboardButton(text="• ࢪجوع •", callback_data="fallen_help"),
-        InlineKeyboardButton(text="• مسح •", callback_data="close"),
+        InlineKeyboardButton(text="‹ رجوع ›", callback_data="fallen_help"),
+        InlineKeyboardButton(text="‹ حذف ›", callback_data="close"),
     ],
 ]
