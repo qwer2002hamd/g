@@ -76,7 +76,7 @@ async def sys_stats(_, message: Message):
 
     await sysrep.edit_text(
         f"""
-⎊ <u>**{BOT_NAME} احصائيات النظام **</u>
+ <u>**{BOT_NAME} احصائيات النظام **</u>
 
 **بايثون :** {pyver.split()[0]}
 **بايروجرام :** {pyrover}
@@ -106,7 +106,7 @@ async def sys_stats(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="مسح",
+                        text="‹ حذف ›",
                         callback_data=f"forceclose abc|{message.from_user.id}",
                     ),
                 ]
