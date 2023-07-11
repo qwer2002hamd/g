@@ -38,7 +38,7 @@ async def song(_, message: Message):
         await message.delete()
     except:
         pass
-    m = await message.reply_text("⎊ جارٍ التحميل...")
+    m = await message.reply_text("انتظر.. جاࢪي التحميل ")
 
     query = "".join(" " + str(i) for i in message.command[1:])
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
@@ -58,13 +58,13 @@ async def song(_, message: Message):
             f"فشل إحضار المسار من ʏᴛ-ᴅʟ.\n\n**السبب :** `{ex}`"
         )
 
-    await m.edit_text("⎊ جارٍ التحميل انتظر,\n\n⎊ بواسطه ‌SPIDER..")
+    await m.edit_text("جارٍ التحميل انتظر,\n\n بواسطه ‌SPIDER..")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫\n⎊ **العنوان :** [{title[:23]}]({link})\n⎊ **المده :** `{duration}`\n⎊ ** بواسطة :** {BOT_MENTION}\n‌‌‏‌‌‏≪⊶⌯━‌‌‏♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━‌‌‏⌯⊷≫"
+        rep = f"‌‌💡 **العنوان :** [{title[:23]}]({link})\n⌛ **المده :** `{duration}`\n💫 ** بواسطة :** {BOT_MENTION}"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -74,7 +74,7 @@ async def song(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="يوتيوب",
+                            text="‹ يـوتيوب ›",
                             url=link,
                         )
                     ]
