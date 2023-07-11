@@ -97,13 +97,13 @@ helpmenu = [
         InlineKeyboardButton(text="‹ اوامر بالانگليزي ›", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="‹ 🔙رجوع ›", callback_data="fallen_home"),
+        InlineKeyboardButton(text="🔙رجوع", callback_data="fallen_help"),
     ],
 ]
 
 
 help_back = [
     [
-        InlineKeyboardButton(text="‹ 🔙رجوع ›", callback_data="fallen_home"),
+        InlineKeyboardButton(text="🔙رجوع", callback_data="fallen_home"),
     ],
 ]
