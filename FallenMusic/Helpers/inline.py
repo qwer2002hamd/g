@@ -52,8 +52,8 @@ pm_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="‹ اوامر الـتشغيل ›", callback_data="fallen_help"), 
-        InlineKeyboardButton(text="‹ طريقه التفعيل ›", callback_data="fallen_cb hmd"),
+    [InlineKeyboardButton(text="‹ طريقه التفعيل ›", callback_data="fallen_cb hmd"), 
+        InlineKeyboardButton(text="‹ اوامر التشغيل ›", callback_data="fallen_help"),
     ],
     [
         InlineKeyboardButton(text="‹ المطور ›", user_id=config.OWNER_ID),
@@ -70,8 +70,8 @@ gp_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="‹ اوامر الـتشغيل ›", callback_data="fallen_help"), 
-        InlineKeyboardButton(text="‹ طريقه التفعيل ›", callback_data="fallen_cb hmd"),
+    [InlineKeyboardButton(text="‹ طريقه التفعيل ›", callback_data="fallen_cb hmd"), 
+        InlineKeyboardButton(text="‹ اوامر التشغيل ›", callback_data="fallen_help"),
     ],
     [
         InlineKeyboardButton(text="‹ المطور ›", user_id=config.OWNER_ID),
@@ -97,15 +97,13 @@ helpmenu = [
         InlineKeyboardButton(text="‹ اوامر بالانگليزي ›", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="‹ رجوع ›", callback_data="fallen_home"),
-        InlineKeyboardButton(text="‹ حذف ›", callback_data="close"),
+        InlineKeyboardButton(text="‹ 🔙رجوع ›", callback_data="fallen_home"),
     ],
 ]
 
 
 help_back = [
     [
-        InlineKeyboardButton(text="‹ رجوع ›", callback_data="fallen_home"),
-        InlineKeyboardButton(text="‹ حذف ›", callback_data="close"),
+        InlineKeyboardButton(text="‹ 🔙رجوع ›", callback_data="fallen_home"),
     ],
 ]
