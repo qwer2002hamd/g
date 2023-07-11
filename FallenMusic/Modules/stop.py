@@ -41,6 +41,6 @@ async def stop_str(_, message: Message):
         pass
 
     return await message.reply_text(
-        text=f"⎊ **تم ايقاف التشغيل** \n \n⎊ بواسطة : {message.from_user.mention} 🥀",
+        text=f" **تم ايقاف التشغيل** \n \n بواسطة : {message.from_user.mention} 🥀",
         reply_markup=close_key,
     )
